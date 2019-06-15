@@ -21,8 +21,12 @@ public class Fun implements CommandExecutor {
 				if(args[0].equalsIgnoreCase("v")) {
 					p.performCommand("v");
 				}
-				
-				
+				if(args[0].equalsIgnoreCase("gm")) {
+					p.performCommand("gm");
+				}
+				if(args[0].equalsIgnoreCase("ping")) {
+					p.performCommand("ping");
+				}
 				
 				
 				

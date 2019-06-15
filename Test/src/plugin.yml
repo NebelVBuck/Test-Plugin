@@ -9,3 +9,7 @@ commands:
       description: GameMode!
    fun:
       description: Langeweile!
+   ping:
+      description: Pong!
+   fly:
+      description: Flight!
