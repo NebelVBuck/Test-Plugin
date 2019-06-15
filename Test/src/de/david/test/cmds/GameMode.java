@@ -5,6 +5,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import de.david.test.data.Data;
 import de.david.test.utils.ArrayUtils;
 
 public class GameMode implements CommandExecutor {
@@ -16,9 +17,11 @@ public class GameMode implements CommandExecutor {
 			Player p = (Player) cs;
 			if(!ArrayUtils.isGameMode.contains(p)) {
 				p.setGameMode(org.bukkit.GameMode.CREATIVE);
+				p.sendMessage(Data.prefix + " Du bist nun im Creative!");
 				ArrayUtils.isGameMode.add(p);
 			} else {
 				p.setGameMode(org.bukkit.GameMode.SURVIVAL);
+				p.sendMessage(Data.prefix + " Du bist nun im Survival!");
 				ArrayUtils.isGameMode.remove(p);
 			}
 		}

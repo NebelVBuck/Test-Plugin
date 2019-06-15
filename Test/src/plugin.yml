@@ -7,3 +7,5 @@ commands:
       description: Vanish + Survival Flight!
    gm:
       description: GameMode!
+   fun:
+      description: Langeweile!

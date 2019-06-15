@@ -24,12 +24,12 @@ public class Vanish implements CommandExecutor {
 						if(!(p.getGameMode() == GameMode.CREATIVE)) {
 							p.setAllowFlight(false);
 						}
-						p.sendMessage(Data.prefix + "Du bist nun nicht mehr im Vanish!");
+						p.sendMessage(Data.prefix + " Du bist nun nicht mehr im Vanish!");
 						ArrayUtils.isVanish.remove(p);
 					} else if(!ArrayUtils.isVanish.contains(p)) {
 						all.hidePlayer(p);
 						p.setAllowFlight(true);
-						p.sendMessage(Data.prefix + "Du bist nun im Vanish!");
+						p.sendMessage(Data.prefix + " Du bist nun im Vanish!");
 						ArrayUtils.isVanish.add(p);
 					}
 				}
