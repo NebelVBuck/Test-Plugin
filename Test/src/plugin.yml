@@ -1,0 +1,9 @@
+name: Test
+version: 1.0
+main: de.david.test.main.Main
+author: David
+commands:
+   v:
+      description: Vanish + Survival Flight!
+   gm:
+      description: GameMode!
