@@ -42,6 +42,8 @@ public class Fly implements CommandExecutor {
 					} else {
 						p.sendMessage(Data.prefix + "§c Zu viele Argumente!");
 					}
+				} else {
+					p.sendMessage(Data.noperm);
 				}
 			} else {
 				cs.sendMessage(Data.noplay);

@@ -25,6 +25,7 @@ public class Main extends JavaPlugin {
 		getCommand("fun").setExecutor(new Fun());
 		getCommand("ping").setExecutor(new Ping());
 		getCommand("fly").setExecutor(new Fly());
+		getCommand("help").setExecutor(new Help());
 	}
 	
 }

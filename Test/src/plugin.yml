@@ -8,8 +8,10 @@ commands:
    gm:
       description: GameMode!
    fun:
-      description: Langeweile!
+      description: Anti-Langeweile!
    ping:
       description: Pong!
    fly:
       description: Flight!
+   help:
+      description: Keine Hilfe!
