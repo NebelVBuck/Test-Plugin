@@ -2,11 +2,7 @@ package de.david.test.main;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import de.david.test.cmds.Fly;
-import de.david.test.cmds.Fun;
-import de.david.test.cmds.GameMode;
-import de.david.test.cmds.Ping;
-import de.david.test.cmds.Vanish;
+import de.david.test.cmds.*;
 
 public class Main extends JavaPlugin {
 	
@@ -25,7 +21,7 @@ public class Main extends JavaPlugin {
 		print(">                       <");
 		print("------{Loaded Test}------");
 		getCommand("v").setExecutor(new Vanish());
-		getCommand("gm").setExecutor(new GameMode());
+		getCommand("gm").setExecutor(new Gamemode());
 		getCommand("fun").setExecutor(new Fun());
 		getCommand("ping").setExecutor(new Ping());
 		getCommand("fly").setExecutor(new Fly());
