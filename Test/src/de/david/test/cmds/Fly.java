@@ -30,9 +30,11 @@ public class Fly implements CommandExecutor {
 							if(!t.getAllowFlight()) {
 								t.setAllowFlight(true);
 								p.sendMessage(Data.prefix + " Der Spieler " + t.getName() + " kann nun Fliegen!");
+								t.sendMessage(Data.prefix + " Du kannst nun Fliegen!");
 							} else {
 								Bukkit.getPlayer(args[0]).setAllowFlight(false);
 								p.sendMessage(Data.prefix + " Der Spieler " + t.getName() + " kann nun nicht mehr Fliegen!");
+								t.sendMessage(Data.prefix + " Du kannst nun nicht mehr Fliegen!");
 							}
 						} else {
 					p.sendMessage(Data.prefix + " §cDer Spieler §6" + args[0] + " §cist nicht auf dem Server!");

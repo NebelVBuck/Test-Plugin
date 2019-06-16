@@ -19,19 +19,19 @@ public class Gamemode implements CommandExecutor {
 				p.sendMessage(Data.prefix + " §cZu wenig Argumente! Benutze /gm <0-3> <Spieler>");
 			} else if(args.length == 1) {
 				if(args[0].equalsIgnoreCase("0")) {
-					p.sendMessage(Data.prefix + "Du bist nun im Survival Modus!");
+					p.sendMessage(Data.prefix + " Du bist nun im Survival Modus!");
 					p.setGameMode(GameMode.SURVIVAL);
 				}
 				if(args[0].equalsIgnoreCase("1")) {
-					p.sendMessage(Data.prefix + "Du bist nun im Creative Modus!");
+					p.sendMessage(Data.prefix + " Du bist nun im Creative Modus!");
 					p.setGameMode(GameMode.CREATIVE);
 				}
 				if(args[0].equalsIgnoreCase("2")) {
-					p.sendMessage(Data.prefix + "Du bist nun im Adventure Modus!");
+					p.sendMessage(Data.prefix + " Du bist nun im Adventure Modus!");
 					p.setGameMode(GameMode.ADVENTURE);
 				}
 				if(args[0].equalsIgnoreCase("3")) {
-					p.sendMessage(Data.prefix + "Du bist nun im Spectator Modus!");
+					p.sendMessage(Data.prefix + " Du bist nun im Spectator Modus!");
 					p.setGameMode(GameMode.SPECTATOR);
 				}
 			} else {
